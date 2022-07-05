@@ -14,7 +14,7 @@ body {
     display: flex;
    /* align-items: center;*/
     min-height: 100vh;
-    padding: 50px;
+    padding: 30px;
     background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
 }
 
@@ -22,13 +22,25 @@ body {
     color: white;
     border-radius: 10px;
     display: flex;
+    height: 90vh;
     min-width: 80%;
-    padding: 5px 15px 15px 15px;
+    padding: 5px 15px 5px 15px;
     flex-direction: column;
+    position: relative;
     text-align: center;
     background: rgb(40, 51, 58);
    
 
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        min-width: 80%;
+        padding: 5px 5px 5px 5px;  
+    }
 }
 
 .task-list .head {
@@ -67,10 +79,10 @@ body {
 
 .order-lists{
    
-    height: 230px ;
+    height: 300px ;
     overflow: scroll;
     scroll-behavior: smooth;
-    margin: 2px 40px 10px 40px;
+    margin: 2px 40px 0px 40px;
     padding: 10px 20px;
 }
 
@@ -84,10 +96,11 @@ body {
     display: flex;
 }
 
-.clear #clear-all {
+
+ #clear-all {
     color: white;
     background: rgb(43, 211, 155);
-    height: 35spx;
+    height: 35px;
     padding: 5px;
     border: 0px;
     border-radius: 5px;
@@ -105,8 +118,6 @@ body {
     height: 30px;
     padding: 5px;
     border: 0px;
-    
     border-radius: 5px;
     margin-right: 0px;
-
 }
