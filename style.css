@@ -1,8 +1,10 @@
 *{
+
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 body {
@@ -20,11 +22,12 @@ body {
     color: white;
     border-radius: 10px;
     display: flex;
-    min-width: 70%;
+    min-width: 80%;
     padding: 5px 15px 15px 15px;
     flex-direction: column;
     text-align: center;
     background: rgb(40, 51, 58);
+   
 
 }
 
@@ -41,7 +44,7 @@ body {
     color: white;
     padding: 3px;
     height: 40px;
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
     background: rgb(18, 24, 27);
 }
@@ -52,17 +55,22 @@ body {
     color: white;
     background: rgb(43, 211, 155);
     height: 40px;
-    padding: 3px;
-    width: 5%;
+    padding: 2px;
+    width: 10%;
     border: 0px;
     border-radius: 5px;
+}   
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .order-lists{
-    overflow-y: hidden;
-    scroll-snap-type: y mandatory;
+   
+    height: 230px ;
+    overflow: scroll;
     scroll-behavior: smooth;
-    margin: 2px 40px;
+    margin: 2px 40px 10px 40px;
     padding: 10px 20px;
 }
 
@@ -74,22 +82,20 @@ body {
     padding: 7px;
     width: 100%;
     display: flex;
-    list-style: armenian;
-   
-
 }
 
 .clear #clear-all {
     color: white;
     background: rgb(43, 211, 155);
-    height: 40px;
+    height: 35spx;
     padding: 5px;
     border: 0px;
     border-radius: 5px;
-    margin-left: 10px;
-}
+    margin-bottom: 2px;
+} 
 
 .span {
+
   width: 90%;
 }
 

@@ -35,18 +35,23 @@ save.onclick = function addAndDrop() {
 
       //this activates the del button
       function delet() {
-            list.style.display = 'none';
+            list.style.display  = 'none';
       }
       
       del.onclick = delet;
       console.log('list');
+
+
+      clearAll.onclick = function clear() {
+         //  lists.style.display = 'none';
+          orderedList.innerHTML = "";
+         document.getElementById("input").innerHTML.value = '';
+        }
    }
 
    
 // this activites the Clear All btn
-   clearAll.onclick = function clear() {
-      lists.style.display = 'none';
-   }
+   
 
 
   
